@@ -5,5 +5,4 @@
 ### centro de procesos industriales y construccion
 ___
 
-[files in DRIVE - ADSO](pttps://tinyurl.com4657t2vw)
-
+[files in DRIVE - ADSO](https://shorturl.at/bfrOX)
