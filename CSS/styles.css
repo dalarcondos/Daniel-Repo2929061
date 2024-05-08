@@ -1,0 +1,115 @@
+/* - - - - - - - - - - - - - */
+/* R E S E T */
+/* - - - - - - - - - - - - - */
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+/* - - - - - - - - - - - - - */
+/* F O N T S */
+/* - - - - - - - - - - - - - */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* - - - - - - - - - - - - - */
+/* V A R I A B L E S */
+/* - - - - - - - - - - - - - */
+:root {
+    --color-1: #0009;
+    --color-2: #fff9;
+    --font-fm: Poppins, sans-serif;
+}
+/* - - - - - - - - - - - - - */
+/* G E N E R A L */
+/* - - - - - - - - - - - - - */
+body {
+    align-items: center;
+    color: var(--color-1);
+    display: flex;
+    font-family: var(--font-fm);
+    justify-content: center;
+    min-height: 100vh;
+    main {
+        header {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            h1 {
+                font-size: 4.5rem;
+                font-weight: 400;
+            }
+            h2 {
+                font-size: 2rem;
+                font-weight: 200;
+                border-bottom: 4px solid var(--color-1)
+            }
+            h3 {
+                border-radius: 20px;
+                background-color: var(--color-1);
+                color: var(--color-2);
+                font-weight: 500;
+                padding: 8px 20px;
+            }
+            img {
+                border-radius: 100px;
+                border: 10px solid var(--color-1);
+                width: 200px;
+            }
+        }
+    }
+}
+/* - - - - - - - - - - - - - */
+/* M A I N   M E N U */
+/* - - - - - - - - - - - - - */
+body.mmenu {
+    background-color: #690000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='76.9' stroke-opacity='0.1' %3E%3Ccircle fill='%23690000' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23640000' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%235f0000' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%235a0000' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23550000' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23500000' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%234b0000' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23460000' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23410000' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%233b0000' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23360000' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23310000' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%232c0000' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23270000' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23220000' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%231d0000' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23180000' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23130000' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
