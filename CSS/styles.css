@@ -102,6 +102,20 @@ body {
                 width: 200px;
             }
         }
+        menu {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            a:is(:link, :visited) {
+                color: rgb(248, 63, 248);
+                background: lightgray;
+                display: flex;
+                gap: 0.4rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }
 /* - - - - - - - - - - - - - */
