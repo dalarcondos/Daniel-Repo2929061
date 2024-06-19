@@ -245,8 +245,15 @@ body.html {
     header {
         h2{
             border-bottom: none;
-            max-width: 75%;
+            max-width: 80%;
+            text-align: center;
 
+        }
+    }
+    section {
+        p{
+            /* color: rgba(255, 136, 0, 0.658); */
+            font-size: 1rem;
         }
     }
     menu {
@@ -261,7 +268,7 @@ body.html {
         }
     }
     h3 {
-        color: lightsalmon;
+        /* color: lightsalmon; */
         font-size: 1.4rem;
     }
     xmp {
