@@ -207,6 +207,7 @@ body.emmet {
         h2{
             border-bottom: none;
             max-width: 75%;
+            text-align: center;
 
         }
     }
