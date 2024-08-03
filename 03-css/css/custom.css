@@ -1,0 +1,8 @@
+div.tittle {
+    background-color: lightgoldenrodyellow;
+    border-radius: 1rem;
+    color: rgb(255, 30, 30);
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
