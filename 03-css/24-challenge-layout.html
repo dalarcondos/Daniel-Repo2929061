@@ -17,10 +17,10 @@
             justify-content: center;
             align-items: center;
             background-color: #0006;
-            width: 1190px;
+            width: 1210px;
             height: 225px;
-            border-radius: 10px;
             margin: 0 auto;
+            border-radius: 10px;
             
         }
 
@@ -49,6 +49,14 @@
             width: 115px;
         }
 
+        figure.imagen4 {
+            background: url(images/spriteweb.png) no-repeat;
+            background-position: -510px -420px;
+            height: 200px;
+            width: 240px;
+            margin-bottom: 10px; 
+        }
+
 
         div.cuadro div div {
             color: #000;
@@ -75,7 +83,6 @@
             align-items: center; 
             flex-wrap: wrap; 
             margin-top: 20px; 
-
         }
 
         .cuadro2 div {
@@ -85,8 +92,8 @@
             background-color: #0006; 
             width: 1190px; 
             height: 225px;
-            border-radius: 10px;
             margin: 10px; 
+            border-radius: 10px;
             padding: 10px; 
         }
 
@@ -103,11 +110,27 @@
 
         .cuadro2 div h4 {
             width: 700px;
+            text-align: justify;
         }
 
 
+        .cuadro2 div :hover {
+            color: #17a053;
+        }
 
 
+        .cuadro3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            border-radius: 10px;
+            background-color: #fff;
+            width: 1190px;
+            height: 300px; 
+            margin: 20px auto; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
 
 
 
@@ -123,6 +146,7 @@
             gap: 1.2rem;
             width: 1000px;
         }
+
 
         header figure.logo {
             background: url(images/spriteweb.png) no-repeat;
@@ -152,6 +176,42 @@
             border-bottom: 2px solid yellow;
         }
 
+        .menu2 {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem; 
+            padding-bottom: 10px;
+            margin: 0; 
+            align-self: flex-end; 
+        }
+
+
+        menu.menu2 a:is(:link, :visited) {
+            background-color: #fff;
+            border-bottom: 2px solid white;
+            color: #000;
+            font-size: 1.6rem;
+            padding: 10px 35px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.4s ease-in;
+            border-bottom: 2px solid rgb(21, 255, 0);
+            text-transform: uppercase;
+            width: 20%;
+        }
+
+        menu.menu2 a:is(:hover),
+        menu.menu2 a.active {
+            /* background-color: #fff; */
+            color: #333;
+            border-bottom: 2px solid rgb(21, 255, 0);
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+        }
+
 
         section {
             display: flex;
@@ -159,10 +219,19 @@
             flex-direction: column;
         }
         footer {
-        width: 80%;
-        margin-top: 20px;
-        background-color: #0006;
+            width: 100%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            padding: 10px 0;
+            height: 300px; 
         }
+ 
+
+
+
     </style>
 </head>
 
@@ -230,7 +299,19 @@
 
         </section>
         <footer>
-
+            <div class="cuadro3">
+                
+                <figure class="imagen4"></figure>
+                <div class="menu-container">
+                    <menu class="menu2">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </menu>
+                </div>
+            </div>
         </footer>
     </main>
 
