@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39-challenge-responsive</title>
+    <style>
+        * {
+  transition: all 0.2s ease-in;
+}
+body {
+  background: url(images/wallpaper.jpg) ;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+header img{
+    max-width: 50%;
+    height: auto;
+    padding: 15px;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+main div {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+main div.txt2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        bottom: 0px;
+        width: 200px;
+        height: 45px;
+        background: #000000cc;
+        font-weight: bold; 
+}
+
+main div.txt2:hover {
+    height: 80px;
+}
+
+main div img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+
+}
+
+article {
+  background-color: #000000cc;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+article div img {
+    width: 200px;
+}
+
+article h2 {
+    color: #c20101;
+}
+
+.txt {
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.txt2 {
+    background: none;
+}
+
+@media (max-width: 880px) {
+    header img {
+        max-width: 80%;
+    }
+    main {
+    width: 500px;
+}
+article {
+    width: 500px;
+  }
+  article div.txt {
+    width: 500px;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 60%; 
+    }
+    main {
+    width: 300px;
+}
+article {
+    width: 300px;
+    height: 280px;
+  }
+  article div.txt {
+    width: 300px;
+    height: 270px;
+    overflow-y: scroll;
+  }
+  article div img {
+    width: 150px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logoAs.svg" alt="" class="logo">
+    </header>
+    <main>
+        <div>
+            <div class="txt2">Desmond</div>
+            <img src="images/Desmond.webp" alt=""></div>
+        <div>
+          <div class="txt2">Altair</div>
+          <img src="images/Altair.webp" alt="">
+        </div>
+        <div>
+          <div class="txt2">Ezio</div>
+          <img src="images/Ezio.webp" alt="">
+        </div>
+        <div>
+          <div class="txt2">Lucy</div>
+          <img src="images/Lucy.webp" alt="">
+        </div>
+      </main>
+      <article>
+        <div>
+          <img src="images/Ezio2.jpg" alt="">
+        </div>
+        <div class="txt">
+          <h2>Ezio Auditore</h2>
+          <p>Ezio Auditore da Firenze es uno de los personajes más icónicos de la saga "Assassin's Creed". Nacido en el Renacimiento italiano, Ezio comienza su vida como un joven noble despreocupado, pero su mundo cambia drásticamente tras la ejecución de su familia. Esta tragedia lo impulsa a convertirse en un asesino, buscando venganza y justicia. A medida que avanza en su viaje, Ezio no solo se convierte en un maestro asesino, sino que también descubre la vasta conspiración entre Assassins y Templarios, forjando su legado como un líder carismático y astuto. Su historia explora temas de traición, honor y el eterno conflicto entre libertad y control.</p>
+          <p>Tras los eventos de su juventud, Ezio Auditore se convierte en un líder formidable de la Hermandad de Asesinos. En su búsqueda de venganza y justicia, se adentra en las complejidades del poder en Italia, enfrentándose a corruptos gobernantes y figuras clave de la historia, como el papa Alejandro VI. A medida que crece en habilidades y sabiduría, Ezio no solo busca eliminar a sus enemigos, sino que también se convierte en un mentor para otros asesinos, promoviendo la causa de la libertad.</p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <img src="images/Desmond2.png" alt="">
+        </div>
+        <div class="txt">
+          <h2>Desmond Miles</h2>
+          <p>Desmond Miles es un personaje central en la narrativa de "Assassin's Creed", cuya historia se entrelaza con las vidas de sus ancestros, como Ezio Auditore. Secuestrado por la corporación Abstergo, Desmond es obligado a revivir las memorias de sus antepasados a través de la tecnología Animus. Al principio, se siente atrapado y desconectado de su legado, pero a medida que explora el pasado de Ezio y otros asesinos, comienza a comprender el profundo conflicto entre Assassins y Templarios.</p>
+          A lo largo de su viaje, Desmond se convierte en un héroe por derecho propio, adquiriendo habilidades y conocimientos de los asesinos que le permiten enfrentarse a los poderosos enemigos de su tiempo. A medida que la lucha por la libertad se intensifica en el presente, Desmond descubre la importancia de su papel en la Hermandad, fusionando el legado de sus ancestros con su propia lucha por la verdad y la justicia. Su viaje es una exploración de identidad y redención, donde el pasado y el presente se entrelazan en una batalla por el futuro.
+        </div>
+      </article>
+</body>
+</html>
