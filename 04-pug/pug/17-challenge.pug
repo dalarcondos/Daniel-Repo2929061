@@ -15,4 +15,19 @@ html(lang="en")
                 h1 17 - Challenge 🐱‍👤
                 h2 Provides an exercise to apply the learned concepts.
             section
-                ul
+                mixin fila(numero, color)
+                    .fila(style=`background-color: ${color}; margin-bottom: 6px; `)
+                        div(style='padding: 20px; width: 30px; background-color: #3339; display: flex; justify-content: center; align-items: center;') #{numero}
+
+                +fila(1, '#64FFE4')
+                +fila(2, '#66D5FA')
+                +fila(3, '#5DA8FA')
+                +fila(4, '#5B80FA')
+                +fila(5, '#6545FA')
+                +fila(6, '#7600FF')
+                +fila(7, '#A000FF')
+                +fila(8, '#C800FF')
+                +fila(9, '#E100FF')
+                +fila(10, '#FA00FF')
+
+
