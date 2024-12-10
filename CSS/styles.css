@@ -426,3 +426,48 @@ body.sass {
     }
 }
 
+/* - - - - - - - - - - - - - */
+/* B O O S T R A P M E N U */
+/* - - - - - - - - - - - - - */
+body.bootstrap {
+    background-color: #16001B;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%2316001B' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23250e31' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%2337164a' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23491d64' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%235c2580' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23702D9D' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    header {
+        h2{
+            border-bottom: none;
+            max-width: 80%;
+            text-align: center;
+            font-weight: 300;
+
+        }
+
+    }
+    menu {
+        margin-bottom: 2rem;
+    }
+    menu {
+        a:is(:link, visited) {
+          span {
+            background-color: #7921b4;
+          } 
+        }
+        a:is(:hover) span {
+            width: 70px;
+            background-color: #a41bff;
+        }
+    }
+    h3 {
+        color: #9c20e9;
+        font-size: 1.4rem;
+    }
+    xmp {
+        background-color: rgb(0, 0, 0);
+        border-style: groove;
+        border-color: #702D9D;
+        border-radius: 10px;
+        padding: 2px 10px 20px 10px;
+    }
+}
+ */
